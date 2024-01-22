@@ -1,0 +1,91 @@
+body{
+    background-image: url(/body\ background.jpg);
+}
+body::before{
+    content: '';
+    position: absolute;
+ background-color: black;
+    width: 100%;
+    height: 500vh;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+div.outer{
+    display: flex;
+    flex-direction: row;
+}
+div#container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-top: 15vh;
+    height: 50%;
+    width: 75vh;
+    margin: auto;
+    position: relative;
+    top: 9vh;
+    border-radius: 25px;
+    text-align: center;
+    font-style: italic;
+    
+}
+div.card-body textarea{
+    font-size: 48px;
+    font-style: bold;
+}
+div#notes{
+    text-align: center;
+    align-content: center;
+}
+
+div#container img{
+    display: inline-block;
+    height: fit-content;
+    width: 130px;
+    margin: 24px;
+    border-radius: 50%;
+}
+div#container h1{
+    position: absolute;
+    padding: 59px;
+    margin-left: 113px;
+    font-size: 30px;
+}
+#addTxt{
+    background-color: blanchedalmond;
+    border-radius: 35px;
+    margin-top: 2vh;
+}
+#addBtn{
+    border-radius: 25px;
+    margin: 2vh;
+}
+div.outernn{
+    display: flex;
+    flex-direction: column;
+    bottom: 20vh;
+    background-color: #fff;
+    border: 2px solid black;
+    margin-bottom: 31vh;
+    height:fit-content;
+    width: 75vh;
+    top: 25vh;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    border-radius: 25px;
+    align-content: center;
+   
+}
+#read{
+    border: 1px solid black;
+    border-radius: 50%;
+}
+@media screen and (max-width:768px){
+    div.outer{
+        display: flex;
+        flex-direction: column;
+    }
+}
